@@ -44,8 +44,36 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 ## 3. Write a Credit Risk Analysis Report
 
-An overview of the analysis: Explain the purpose of this analysis.
+### Overview of the Analysis
 
-The results: Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model.
+* Explain the purpose of the analysis.
+* Explain what financial information the data was on, and what you needed to predict.
+* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
+* Describe the stages of the machine learning process you went through as part of this analysis.
+* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
 
-A summary: Summarize the results from the machine learning model. Include your justification for recommending the model for use by the company. If you don’t recommend the model, justify your reasoning.
+### Results
+
+- Accuracy score *(TP + TN) / (TP + TN + FP + FN)*:
+
+**(19,266 / 19,384) = 99.39%**
+**99.34% of the loans were correctly predicted as Healthy or High-risk.**
+
+- Precision score *TP / (TP + FP)*:
+
+**(593 / 679) = 87.33%**
+**87.33% of the Predicted High-risk loans are actually High-risk loans.**
+
+- Recall score *TP / (TP + FN)*:
+
+**(593 / 625) = 94.88%**
+**94.88% of the High-risk loans were correctly predicted as High-risk loans.**
+
+## Summary
+
+Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
+
+* Which one seems to perform best? How do you know it performs best?
+* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+
+If you do not recommend any of the models, please justify your reasoning.
