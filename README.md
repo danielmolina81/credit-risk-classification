@@ -62,21 +62,18 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 ### Results
 
-- Accuracy score *(TP + TN) / (TP + TN + FP + FN)*:
-
-**(19,266 / 19,384) = 99.39%**
+- **Accuracy score *(TP + TN) / (TP + TN + FP + FN)*:**
+(19,266 / 19,384) = 99.39%
 
 **99.39% of the loans were correctly predicted as Healthy or High-risk.**
 
-- Precision score *TP / (TP + FP)*:
-
-**(593 / 679) = 87.33%**
+- **Precision score *TP / (TP + FP)*:**
+(593 / 679) = 87.33%
 
 **87.33% of the Predicted High-risk loans are actually High-risk loans.**
 
-- Recall score *TP / (TP + FN)*:
-
-**(593 / 625) = 94.88%**
+- **Recall score *TP / (TP + FN)*:**
+(593 / 625) = 94.88%
 
 **94.88% of the High-risk loans were correctly predicted as High-risk loans.**
 
