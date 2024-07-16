@@ -66,7 +66,7 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 **(19,266 / 19,384) = 99.39%**
 
-**99.34% of the loans were correctly predicted as Healthy or High-risk.**
+**99.39% of the loans were correctly predicted as Healthy or High-risk.**
 
 - Precision score *TP / (TP + FP)*:
 
