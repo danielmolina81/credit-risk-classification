@@ -46,11 +46,19 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 ### Overview of the Analysis
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any other algorithms).
+* The purpose of this analysis is to determine if a logistic regression model can predict the quality of a loan based on a series of features.
+
+* The dataset includes features such as: loan size, interest rate, borrower income, debt to income ration, number of accounts, derogatory marks, total debt.
+
+* The variable being predicted is Loan Status which has 0 values for Healthy loans and 1 values for High-risk loans.
+
+* The following steps were follow to create the model:
+    - After importing the data the 'x' and 'y' variables where separated.
+    - Then the data set was split between training and testing datasets, using train_test_split function.
+    - Using the LogisticRegression algorithm a Logistic Regression Model was created using the training data.
+    - Using the predict function with the model, predictions were created for the 'x' testing data.
+    - The predictions were compared to the 'y' testing data
+    - Finaly, based on the confusion_matrix and the classification_report, conclusions about the quality of the model were made.
 
 ### Results
 
@@ -69,11 +77,9 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 **(593 / 625) = 94.88%**
 **94.88% of the High-risk loans were correctly predicted as High-risk loans.**
 
-## Summary
+### Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+- **I would recommend the used of this model. It has a good level of accuracy, precision and recall.**
+- **In terms of credit risk, a financial institution will benefit of this model as 94.88% of the High-level loans were correctly predicted.**
+- **However, there should be considerations regarding reputational risk because of the False Positive results.**
+- **From the High-risk loans predicted by the model, 12.67% are actually Healthy. So, if the Financial Institution makes a decision based on the model, customers with healthy loans may be affected and become detractors or take legal actions.**
