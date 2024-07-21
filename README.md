@@ -37,9 +37,23 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 - How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
 
-**99.54% of the Healthy loans were correctly predicted as Healthy by the model**
+### **- The model predicts well the Healthy and the High-risk loans**
 
-**94.88% of the High-risk loans were correctly predicted as High-risk by the model**
+### Accuracy
+
+- The accuracy of the model is 99.39%. This means that 99.39% of the loans were correctly predicted as Healthy and High Risk loans.
+
+### Precision
+
+- The precision score for High-risk loans is 87.33%. This means 87.33% of the Predicted High-risk loans are actually High-risk loans.
+
+- The precision score for Healthy loans is 99.83%. This means 99.83% of the Predicted Healthy loans are actually Healthy loans.
+
+### Recall
+
+- The Recall score for High-risk loans is 94.88%. This means 94.88% of the High-risk loans were correctly predicted as High-risk by the model.
+
+- The Recall score for Healthy loans is 99.54%. This means 99.54% of the Healthy loans were correctly predicted as Healthy by the model.
 
 
 ## 3. Write a Credit Risk Analysis Report
@@ -79,7 +93,7 @@ A dataset of historical lending activity from a peer-to-peer lending services co
 
 ### Summary
 
-- **I would recommend the used of this model. It has a good level of accuracy, precision and recall.**
+- **I would recommend the use of this model. It has a good level of accuracy, precision and recall.**
 - **In terms of credit risk, a financial institution will benefit of this model as 94.88% of the High-level loans were correctly predicted.**
 - **However, there should be considerations regarding reputational risk because of the False Positive results.**
 - **From the High-risk loans predicted by the model, 12.67% are actually Healthy. So, if the Financial Institution makes a decision based on the model, customers with healthy loans may be affected and become detractors or take legal actions.**
